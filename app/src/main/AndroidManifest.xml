@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,6 @@
         android:theme="@style/Theme.CapstoneNgaksoro"
         tools:targetApi="31">
         <activity
-            android:theme="@style/CustomTextViewStyle"
             android:name=".ui.belajar.BelajarActivity"
             android:exported="false" />
         <activity

@@ -1,8 +1,7 @@
 package com.example.capstonengaksoro.ui.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.capstonengaksoro.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.capstonengaksoro.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

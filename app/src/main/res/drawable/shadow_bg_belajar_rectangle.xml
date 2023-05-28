@@ -14,16 +14,8 @@
         android:right="0px"
         android:top="2px">
         <shape android:shape="rectangle">
-            <solid android:color="@color/white" /> <!-- Set the desired shadow color and opacity -->
             <corners android:radius="8dp" /> <!-- Set the same corner radius as the background shape -->
         </shape>
     </item>
 
-    <!-- Vector drawable -->
-    <item
-        android:bottom="4dp"
-        android:drawable="@drawable/background_belajar_rectangle"
-        android:left="4dp"
-        android:right="4dp"
-        android:top="4dp" />
 </layer-list>

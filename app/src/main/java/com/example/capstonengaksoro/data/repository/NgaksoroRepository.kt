@@ -9,7 +9,6 @@ import com.example.capstonengaksoro.data.response.ResponseNgaksoro
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.lang.Exception
 
 class NgaksoroRepository private constructor(
     private val apiService: ApiService
