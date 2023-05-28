@@ -1,8 +1,10 @@
 package com.example.capstonengaksoro.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.capstonengaksoro.databinding.ActivityHomeBinding
+import com.example.capstonengaksoro.ui.belajar.BelajarActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -11,5 +13,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.modulBelajar.setOnClickListener {
+            val intent = Intent(this, BelajarActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

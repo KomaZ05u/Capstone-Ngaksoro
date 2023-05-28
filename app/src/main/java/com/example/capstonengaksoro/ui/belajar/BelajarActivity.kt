@@ -7,14 +7,12 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.airbnb.lottie.LottieAnimationView
 import com.example.capstonengaksoro.R
 import com.example.capstonengaksoro.databinding.ActivityBelajarBinding
 import com.example.capstonengaksoro.ui.ViewModelFactory
 import com.example.capstonengaksoro.utils.checkInternetConnection
 import com.example.capstonengaksoro.utils.networkStatusLiveData
 import com.example.capstonengaksoro.utils.registerNetworkCallback
-import com.example.capstonengaksoro.utils.unregisterNetworkCallback
 
 class BelajarActivity : AppCompatActivity() {
 
@@ -37,6 +35,8 @@ class BelajarActivity : AppCompatActivity() {
 
         //        Init ProgresBar
         progressBar = binding.progressBar
+
+//        Init Rv
 
         binding.recyclerView.layoutManager = GridLayoutManager(this, 3)
 
@@ -80,10 +80,6 @@ class BelajarActivity : AppCompatActivity() {
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        unregisterNetworkCallback(this)
-    }
 
     private fun showLoading(isLoading: Boolean) {
         if (isLoading) {

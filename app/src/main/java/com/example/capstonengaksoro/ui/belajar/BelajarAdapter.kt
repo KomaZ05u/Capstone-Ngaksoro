@@ -37,7 +37,7 @@ class BelajarAdapter(private val data: List<ImagesItem>) :
             with(itemView) {
                 Glide.with(itemView.context)
                     .load(dataList.image)
-                    .apply(RequestOptions().override(100,100))
+                    .apply(RequestOptions().override(100, 100))
                     .into(image)
                 tvName.text = dataList.text
 

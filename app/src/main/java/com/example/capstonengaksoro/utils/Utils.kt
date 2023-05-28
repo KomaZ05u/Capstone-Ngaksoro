@@ -37,10 +37,3 @@ fun registerNetworkCallback(context: Context) {
             }
         })
 }
-
-fun unregisterNetworkCallback(context: Context) {
-    val connectivityManager =
-        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-    connectivityManager.unregisterNetworkCallback(
-        object : ConnectivityManager.NetworkCallback() {})
-}

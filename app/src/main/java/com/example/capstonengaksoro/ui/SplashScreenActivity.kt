@@ -10,7 +10,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.capstonengaksoro.databinding.ActivitySplashScreenBinding
-import com.example.capstonengaksoro.ui.belajar.BelajarActivity
+import com.example.capstonengaksoro.ui.home.HomeActivity
 
 
 @SuppressLint("CustomSplashScreen")
@@ -37,7 +37,7 @@ class SplashScreenActivity : AppCompatActivity() {
 //                finish()
 //            }
 
-            val intent = Intent(this, BelajarActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_DELAY)
