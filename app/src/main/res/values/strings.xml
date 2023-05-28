@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Capstone Ngaksoro</string>
+    <string name="image_content">Image Hanacaraka</string>
+<!--     TEXT HANACARAKA -->
+    <string name="ha">Ha</string>
+    <string name="na">Na</string>
+    <string name="ca">Ca</string>
+    <string name="ra">Ra</string>
+    <string name="ka">Ka</string>
+    <string name="da">Da</string>
+    <string name="ta">Ta</string>
+    <string name="sa">Sa</string>
+    <string name="wa">Wa</string>
+    <string name="la">La</string>
+    <string name="pa">Pa</string>
+    <string name="dha">Dha</string>
+    <string name="ja">Ja</string>
+    <string name="ya">Ya</string>
+    <string name="nya">Nya</string>
+    <string name="ma">Ma</string>
+    <string name="ga">Ga</string>
+    <string name="ba">Ba</string>
+    <string name="tha">Tha</string>
+    <string name="nga">Nga</string>
+
 </resources>

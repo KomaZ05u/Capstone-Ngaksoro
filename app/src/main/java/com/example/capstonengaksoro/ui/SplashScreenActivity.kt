@@ -12,6 +12,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import com.example.capstonengaksoro.R
 import com.example.capstonengaksoro.databinding.ActivitySplashScreenBinding
+import com.example.capstonengaksoro.ui.belajar.BelajarActivity
 import com.example.capstonengaksoro.ui.home.HomeActivity
 
 
@@ -39,7 +40,7 @@ class SplashScreenActivity : AppCompatActivity() {
 //                finish()
 //            }
 
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, BelajarActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_DELAY)

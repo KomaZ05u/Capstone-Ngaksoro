@@ -1,0 +1,29 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FBFBFB" /> <!-- Set the desired background color -->
+            <corners android:radius="8dp" /> <!-- Set the desired corner radius -->
+        </shape>
+    </item>
+
+    <!-- Inner shadow layer -->
+    <item
+        android:bottom="0px"
+        android:left="0px"
+        android:right="0px"
+        android:top="2px">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Set the desired shadow color and opacity -->
+            <corners android:radius="8dp" /> <!-- Set the same corner radius as the background shape -->
+        </shape>
+    </item>
+
+    <!-- Vector drawable -->
+    <item
+        android:bottom="4dp"
+        android:drawable="@drawable/background_belajar_rectangle"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp" />
+</layer-list>
