@@ -9,4 +9,6 @@
     <!--    MINE -->
     <color name="navy_blue">#0c2840</color>
     <color name="cream">#FDDF81</color>
+
+    <color name="cream_btn">#FFC60B</color>
 </resources>

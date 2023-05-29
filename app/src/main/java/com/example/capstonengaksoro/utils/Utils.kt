@@ -1,12 +1,14 @@
 package com.example.capstonengaksoro.utils
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.capstonengaksoro.ui.belajar.BelajarActivity
 
 private val _networkStatusLiveData = MutableLiveData<Boolean>()
 val networkStatusLiveData: LiveData<Boolean>
@@ -36,4 +38,9 @@ fun registerNetworkCallback(context: Context) {
                 _networkStatusLiveData.postValue(false)
             }
         })
+}
+
+fun changeActivity(context: Context, targetActivity: Class<*>) {
+    val intent = Intent(context, targetActivity)
+    context.startActivity(intent)
 }

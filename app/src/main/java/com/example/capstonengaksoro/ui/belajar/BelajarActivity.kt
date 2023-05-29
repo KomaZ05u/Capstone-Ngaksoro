@@ -30,6 +30,8 @@ class BelajarActivity : AppCompatActivity() {
         binding = ActivityBelajarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = getString(R.string.belajar_activity)
+
 //        Init Network Checking
         registerNetworkCallback(this)
 
