@@ -12,11 +12,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.example.capstonengaksoro.R
 import com.example.capstonengaksoro.databinding.ActivityMenulisKuisBinding
+import com.example.capstonengaksoro.ui.home.HomeActivity
+import com.example.capstonengaksoro.utils.changeActivity
 import java.io.OutputStream
 
 class MenulisKuisActivity : AppCompatActivity() {
@@ -28,7 +31,14 @@ class MenulisKuisActivity : AppCompatActivity() {
         binding = ActivityMenulisKuisBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         supportActionBar?.title = getString(R.string.menulis)
+        // Customize the back button
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.back_foward)
+        // showing the back button in action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
         binding.hapusBtn.setOnClickListener {
             binding.drawingView.clear()
@@ -36,6 +46,18 @@ class MenulisKuisActivity : AppCompatActivity() {
 
         binding.cekBtn.setOnClickListener {
             saveDrawingToGallery()
+        }
+    }
+
+    // Override onOptionsItemSelected to handle the back button click
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Handle the back button click here
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

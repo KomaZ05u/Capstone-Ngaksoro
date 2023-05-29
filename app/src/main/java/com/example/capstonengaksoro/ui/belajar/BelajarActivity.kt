@@ -1,6 +1,7 @@
 package com.example.capstonengaksoro.ui.belajar
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.Toast
@@ -31,6 +32,10 @@ class BelajarActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.title = getString(R.string.belajar_activity)
+        // Customize the back button
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.back_foward)
+        // showing the back button in action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 //        Init Network Checking
         registerNetworkCallback(this)
@@ -78,8 +83,18 @@ class BelajarActivity : AppCompatActivity() {
                 ).show()
             }
         })
+    }
 
-
+    // Override onOptionsItemSelected to handle the back button click
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Handle the back button click here
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 
