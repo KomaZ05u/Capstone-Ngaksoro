@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Capstone Ngaksoro</string>
+    <string name="app_name">Ngaksoro</string>
     <string name="image_content">Image Hanacaraka</string>
     <string name="check_connection">No Internet, Please Check Your Internet Connection !</string>
     <string name="lorem">Aplikasi ini dapat memiliki modul pembelajaran yang terstruktur untuk memperkenalkan pengguna dengan aksara Jawa. Modul tersebut dapat mencakup pengenalan huruf-huruf aksara Jawa, cara membaca dan menulisnya, serta penggunaan dalam kalimat atau kata-kata umum</string>
@@ -13,9 +13,15 @@
     <string name="hapus">Hapus</string>
     <string name="cek">Cek</string>
 
+    <string name="title_membaca_activity">Pilih jawaban yang tepat</string>
+    <string name="subtitle_membaca_activity">Bagaimana cara membaca huruf dibawah ini</string>
+
+
     <!--    Text Tittle Activity -->
-    <string name="home_activity">Home Activity</string>
+    <string name="home_activity">Home</string>
     <string name="belajar_activity">Modul Belajar</string>
+    <string name="menulis_kuis_activity">Kuis Menulis</string>
+    <string name="membaca_kuis_activity">Kuis Membaca</string>
     <!--     TEXT HANACARAKA -->
     <string name="ha">Ha</string>
     <string name="na">Na</string>
